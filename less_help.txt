@@ -1,4 +1,5 @@
                    SUMMARY OF LESS COMMANDS
+LESS STANDS FOR "MORE IS LESS" A STANDARD FOR THE CONSOLE VISOR
 
       Commands marked with * may be preceded by a number, N.
       Notes in parentheses indicate the behavior if N is given.
