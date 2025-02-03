@@ -1,4 +1,6 @@
-                   SUMMARY OF LESS COMMANDS
+This is for the commnands once we open the Less Visor on Git                  
+
+ SUMMARY OF LESS COMMANDS
 LESS STANDS FOR "MORE IS LESS" A STANDARD FOR THE CONSOLE VISOR
 
       Commands marked with * may be preceded by a number, N.
