@@ -1,5 +1,3 @@
-This is for the commnands once we open the Less Visor on Git                  
-
  SUMMARY OF LESS COMMANDS
 LESS STANDS FOR "MORE IS LESS" A STANDARD FOR THE CONSOLE VISOR
 
