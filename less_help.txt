@@ -1,5 +1,91 @@
- SUMMARY OF LESS COMMANDS
+El visor less en Git se activa automáticamente cuando el resultado de un comando es demasiado largo para caber en una sola pantalla de la terminal. Git utiliza less como su paginador predeterminado para permitirte navegar por la salida de manera cómoda y controlada.
+¿Cuándo se Accede al Visor less?
+
+El visor less se activa en los siguientes casos comunes:
+
+    Ver el Historial de Commits:
+
+        Cuando ejecutas git log y el historial de commits es extenso, Git abre less para que puedas desplazarte por los commits.
+
+    Ver Diferencias (Diffs):
+
+        Al usar git diff y las diferencias son extensas, Git abre less para mostrarte los cambios página por página.
+
+    Ver el Estado Detallado:
+
+        Si usas git status -v (o git status --verbose), y hay mucha información, Git puede abrir less.
+
+    Ver Archivos Grandes:
+
+        Al usar comandos como git show, git blame, o git grep en archivos grandes, Git abre less para facilitar la navegación.
+
+Cómo Funciona less en Git
+
+Cuando Git abre less, puedes usar los siguientes comandos para navegar:
+
+    Barra espaciadora: Avanzar una página.
+
+    Enter: Avanzar una línea.
+
+    b: Retroceder una página.
+
+    q: Salir de less y volver a la terminal.
+
+    / + texto: Buscar texto dentro de la salida (por ejemplo, /fix busca la palabra "fix").
+
+    h: Mostrar la ayuda de less.
+
+Personalizar el Paginador de Git
+
+Si prefieres no usar less o quieres cambiar su comportamiento, puedes configurar Git para usar otro paginador o desactivarlo:
+
+    Cambiar el Paginador:
+
+        Para usar otro paginador (por ejemplo, more):
+        bash
+        Copy
+
+        git config --global core.pager 'more'
+
+    Desactivar el Paginador:
+
+        Si no quieres que Git use un paginador:
+        bash
+        Copy
+
+        git config --global core.pager 'cat'
+
+    Configurar Opciones de less:
+
+        Puedes personalizar cómo se comporta less. Por ejemplo, para salir automáticamente si la salida cabe en una pantalla:
+        bash
+        Copy
+
+        git config --global core.pager 'less -F -X'
+
+Ejemplo de Uso
+
+    Ver el Historial de Commits:
+    bash
+    Copy
+
+    git log
+
+        Si hay muchos commits, Git abrirá less.
+
+    Ver Diferencias:
+    bash
+    Copy
+
+    git diff
+
+        Si los cambios son extensos, Git abrirá less.
+
+En resumen, el visor less en Git se activa automáticamente cuando la salida de un comando es larga, permitiéndote navegar por la información de manera eficiente. Puedes personalizar o desactivar este comportamiento según tus preferencias. 
+
+SUMMARY OF LESS COMMANDS
 LESS STANDS FOR "MORE IS LESS" A STANDARD FOR THE CONSOLE VISOR
+WE ACCESS THE VISOR WHEN WE ARE WORKING 
 
       Commands marked with * may be preceded by a number, N.
       Notes in parentheses indicate the behavior if N is given.
